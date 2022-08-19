@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="content">
+
+        <div class="left">
+            <div class="attribution-background">
+                <div class="attribution-text">
+                    <span>Photo by </span>
+                    <a href="https://unsplash.com/@dominikhofbauer">dominik hofbauer</a>
+                    <span> on </span>
+                    <a href="https://unsplash.com/">Unsplash</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="upper-container">
+                <p class="big-intro">Sign Up</p>
+                <p class="small-intro">You know you want to.</p>
+            </div>
+
+            <div class="form-container">
+                <form id="form" action="#">
+                    <div class="form-row">
+                        <div class="first-name">
+                            <label for="first_name">First name</label>
+                            <input type="text" id="first_name" name="first_name" placeholder=" " required>
+                        </div>
+                        <div class="last-name">
+                            <label for="last_name">Last name</label>
+                            <input type="text" id="last_name" name="last_name" placeholder=" " required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone_number">Phone number</label>
+                            <input type="tel" id="phone-number" name="phone-number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder=" " title="NNN-NNN-NNNN" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirm_password">Confirm password</label>
+                            <input type="password" id="confirm_password" name="confirm_password" placeholder=" " required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="lower-container">
+                <button type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
