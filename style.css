@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+:root {
+    --black: #1c1e21;
+    --gray-text: #606770;
+    --gray-background: #f0f2f5;
+    --gray-border: #E5E7EB;
+    --red: #dc3545;
+    --white-background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-image: linear-gradient(90deg, #29323c, #485563);
+}
+
+.content {
+    height: 80vh;
+    width: 1200px;
+    display: flex;
+    border: 1px solid var(--gray-border);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--white-background);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.left {
+    height: inherit;
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    background: url(./image.jpg);
+    background-size: 100% 100%;
+}
+
+.left img {
+    height: 100%;
+}
+
+.attribution-background {
+    height: 30px;
+    width: 100%;
+    background-color: var(--white-background);
+    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution-text {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+}
+
+a, a:visited, a:hover, a:active {
+    color: var(--black);
+    padding: 0 5px;
+
+}
+
+.right {
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-background);
+}
+
+.upper-container {
+    width: 100%;
+    padding: 40px 40px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 3rem;
+    background-color: var(--gray-background);
+}
+
+.big-intro {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.small-intro {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+.form-container {
+    height: 35vh;
+    width: 100%;
+    padding: 20px 60px;
+    background-color: var(--white-background);
+    display: flex;
+    align-items: center;
+}
+
+.form-row {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 60px;
+}
+
+.form-row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 5px;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 1.5rem;
+}
+
+input {
+    height: 40px;
+    width: 260px;
+    padding: 0 10px;
+    border: 1px solid var(--gray-border);
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid #485563;
+    outline: none;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid var(--red);
+    outline: none;
+}
+
+.lower-container {
+    width: 100%;
+    padding: 40px 40px 40px 75px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    margin: 20px 0;
+    color: var(--white-background);
+    background-color: #485563;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px #29323c;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.lower-container p {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
