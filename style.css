@@ -159,6 +159,7 @@ input:focus {
 }
 
 input:not(:focus):not(:placeholder-shown):invalid,
+input:focus:invalid,
 .error {
     border: 2px solid var(--red);
     outline: none;
